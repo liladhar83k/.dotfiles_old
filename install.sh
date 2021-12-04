@@ -12,13 +12,15 @@ nix-env -iA \
   nixpkgs.neovim \
   nixpkgs.tmux \
   nixpkgs.stow \
-  nixpkgs.bat
+  nixpkgs.bat \ 
+  nixpkgs.gcc
 
 #stow
 stow git
 stow zsh
 stow nvim
 stow ssh
+stow tmux
 
 #add zsh to valid login shell
 command -v zsh | sudo tee -a /etc/shells
