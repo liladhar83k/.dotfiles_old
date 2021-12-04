@@ -12,7 +12,7 @@ nix-env -iA \
   nixpkgs.neovim \
   nixpkgs.tmux \
   nixpkgs.stow \
-  nixpkgs.bat \ 
+  nixpkgs.bat \
   nixpkgs.gcc
 
 #stow
