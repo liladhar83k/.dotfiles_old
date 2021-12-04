@@ -13,7 +13,11 @@ nix-env -iA \
   nixpkgs.tmux \
   nixpkgs.stow \
   nixpkgs.bat \
-  nixpkgs.gcc
+  nixpkgs.gcc \
+  nixpkgs.gdb \
+  nixpkgs.mysql80 \
+  nixpkgs.sqlite \
+  nixos.python38 \
 
 #stow
 stow git
@@ -33,3 +37,6 @@ antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
 
 #install neovim plugins
 nvim --headless +PlugInstall +qall
+
+#install node
+nvm install node
