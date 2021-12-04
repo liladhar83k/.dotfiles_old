@@ -39,4 +39,4 @@ antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
 nvim --headless +PlugInstall +qall
 
 #install node
-nvm install node
+#nvm install node
