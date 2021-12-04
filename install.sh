@@ -17,7 +17,7 @@ nix-env -iA \
   nixpkgs.gdb \
   nixpkgs.mysql80 \
   nixpkgs.sqlite \
-  nixos.python38 \
+  nixpkgs.python38 \
 
 #stow
 stow git
