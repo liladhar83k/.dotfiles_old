@@ -23,7 +23,7 @@ nix-env -iA \
 stow git
 stow zsh
 stow nvim
-stow ssh
+#stow ssh
 stow tmux
 
 #add zsh to valid login shell
