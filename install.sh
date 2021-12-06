@@ -25,5 +25,7 @@ grep -qxF "alias ls='ls -la'" ~/.bashrc || echo "alias ls='ls -la'" >> ~/.bashrc
 grep -qxF "alias vi='nvim'" ~/.bashrc ||  echo "alias vi='nvim'" >> ~/.bashrc
 grep -qxF "alias vim='nvim'" ~/.bashrc || echo "alias vim='nvim'" >> ~/.bashrc
 
+grep -qxF "if [ -e /home/ubuntu/.nix-profile/etc/profile.d/nix.sh ]; then . /home/ubuntu/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer" ~/.profile || echo "if [ -e /home/ubuntu/.nix-profile/etc/profile.d/nix.sh ]; then . /home/ubuntu/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer" >> ~/.profile
+
 #install neovim plugins
 nvim --headless +PlugInstall +qall
