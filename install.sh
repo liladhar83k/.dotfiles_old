@@ -21,9 +21,9 @@ stow ssh
 stow tmux
 
 #aliases
-echo "alias ls='ls -la'" >> ~/.bashrc
-echo "alias vi='nvim'" >> ~/.bashrc
-echo "alias vim='nvim'" >> ~/.bashrc
+grep -qxF "alias ls='ls -la'" ~/.bashrc || echo "alias ls='ls -la'" >> ~/.bashrc
+grep -qxF "alias vi='nvim'" ~/.bashrc ||  echo "alias vi='nvim'" >> ~/.bashrc
+grep -qxF "alias vim='nvim'" ~/.bashrc || echo "alias vim='nvim'" >> ~/.bashrc
 
 #install neovim plugins
 nvim --headless +PlugInstall +qall
